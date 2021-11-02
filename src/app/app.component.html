@@ -1,0 +1,36 @@
+
+<mat-toolbar class="header">
+  <a [routerLink]="['/home']" style="color: black;">Mega Games</a>
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+
+  <mat-sidenav  #sidenav mode="side" opened class="example-sidenav">
+    <h3>Categorias</h3>
+    <a [routerLink]="['/xbox']">Xbox</a>
+    <br><br>
+    <a [routerLink]="['/playstation']">Playstation</a>
+    <br><br>
+    <a [routerLink]="['/nintendo']">Nintendo</a>
+    <br><br>
+    <a [routerLink]="['/classicos']">Classicos</a> 
+     <br><br>
+    <a [routerLink]="['/pc']">PC</a>
+    <br><br>
+    <a [routerLink]="['/mobile']">Mobile</a>
+    <br><br>
+    <a [routerLink]="['/geek-e-nerd']">Geek e Nerd</a>
+    <br><br>
+    <a [routerLink]="['/acessorios']">Acessorios</a>
+    <br><br>
+    <a [routerLink]="['/disney-infinity']">Disney Infinity</a>
+    <br><br>
+    <a [routerLink]="['/seminovos']">Seminovos</a>
+   
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+  
+</mat-sidenav-container>
+ 
